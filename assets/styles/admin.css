@@ -1,0 +1,81 @@
+.websitecarbon {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  box-sizing: border-box;
+}
+
+.websitecarbon *,
+.websitecarbon *::after,
+.websitecarbon *::before {
+  box-sizing: inherit;
+}
+
+.websitecarbon-cell {
+  display: block;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  background: #fff;
+  min-width: 300px;
+  flex-grow: 1;
+  flex-basis: 50%;
+}
+
+.websitecarbon-cell > *:first-child {
+  margin-top: 0;
+}
+
+.websitecarbon-cell > *:last-child {
+  margin-bottom: 0;
+}
+
+.websitecarbon-cell__header {
+  margin-right: -1rem;
+  margin-left: -1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.websitecarbon-batch:not(.active) {
+  display: none;
+}
+
+.websitecarbon-batch__bars {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.websitecarbon-batch__bar {
+  border-top: 1px solid #ccc;
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.websitecarbon-batch__bar:first-child {
+  border-top: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.websitecarbon-batch__bar-heading {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.websitecarbon-progress {
+  border-radius: 9999px;
+  overflow: hidden;
+  background: #ccc;
+}
+
+.websitecarbon-progress span {
+  display: block;
+  width: 0;
+  background: #0073aa;
+  height: 1rem;
+}
